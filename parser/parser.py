@@ -1,5 +1,6 @@
 import xml.etree.ElementTree as ET
 from nodes.NodeObj import NodeObj
+from nodes.ProbabilityFix import *
 
 
 
@@ -11,6 +12,7 @@ def getNodesList(location):
     for child in nodes:
         nodeObject = mapToNodeObject(child)
         result.append(nodeObject)
+    fixProbabilities(result)
     return result
 
 

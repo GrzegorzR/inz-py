@@ -5,6 +5,7 @@ class NodeObj:
         self.states = states
         self.parents = parents
         self.probabilities = probabilities
+        self.fixProbs = None
     def __str__(self):
         return self.toJson()
 
