@@ -20,7 +20,7 @@ def mapToNodeObject(xmlNode):
     states = getStatesList(xmlNode)
     probabilities = getProbabilitiesList(xmlNode)
     parents = getParents(xmlNode)
-    print (name, states, probabilities, parents)
+    #print (name, states, probabilities, parents)
     return NodeObj(name, states, parents, probabilities)
 
 def getStatesList(node):

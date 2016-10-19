@@ -6,10 +6,14 @@ class NodeObj:
         self.parents = parents
         self.probabilities = probabilities
     def __str__(self):
-        return self.name
+        return self.toJson()
 
     def __eq__(self, other):
         return isinstance(other, NodeObj) and self.name == other.name
 
     def __hash__(self):
         return hash(self.name)
+
+    def toJson(self):
+        result = '"name":"{0}"'.format(self.name)
+        return result

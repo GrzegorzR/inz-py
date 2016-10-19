@@ -9,5 +9,5 @@ if __name__ == "__main__":
     nodesManager = fact.getPygraphManager()
     nodesManager.setNodes(nodes)
     nodesManager.createGraph()
-    print nodesManager.toJson()
+    print (nodesManager.toJson())
     #nodesManager.plot()
